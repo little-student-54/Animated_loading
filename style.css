@@ -1,0 +1,57 @@
+body {
+    background-image: linear-gradient(60deg, #3977fd, #46fff6, #a9ff58);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+}
+
+.glas {
+
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    width: 400px;
+    align-items: center;
+    background-color: transparent;
+    border: 5px solid #ffffff;
+    border-radius: 9px;
+    box-shadow: 3px 7px 10px #ffff;
+    margin-top: 200px;
+
+}
+
+/* Loader Container */
+.loader {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Dot Styles */
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: #15ffff;
+    border: 3px solid #222b35;
+    /* Border color for visible dots */
+    border-radius: 50%;
+    animation: loading 0.8s ease-in-out infinite;
+}
+
+/* Keyframes for Pulsing Effect */
+@keyframes loading {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+}
